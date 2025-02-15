@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue;
+}
+
+header {
+    background-color: white;
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgb(144, 142, 142);
+    opacity: 0.8;
+}
+
+.pro {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    margin-right: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav a:hover {
+    color:rgb(63,72,204);
+}
+
+.Hireme {
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+}
+
+.Hireme a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.Hireme a:hover {
+    color: rgb(63,72,204);
+}
+
+.home{
+    background-image: url('Untitled.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    /* box-shadow: 0px 4px 10px rgb(144, 142, 142); */
+
+}
+.name{
+  margin-top: 350px;  
+  margin-left: 50px;
+  font-size: 2em;
+
+}
+h2{
+    margin-left: 50px;
+    
+}
+.image{
+    display: flex;
+    height: 100px;
+    width: 10px;
+}
+
+.image1{
+    margin-left: 47px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+  /* ALL    SKILL  */
+
+.ski{
+    margin-top: 80px;
+    margin-left: 80px;
+    font-size: 2em;
+    opacity: 0.5;
+
+}
+
+
+
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.python{
+    border: solid black;
+    margin: 200px;
+    
+    padding: 100px;
+    box-shadow: 0px 4px 10px rgb(144, 142, 142);
+}
+.html{
+    border: solid black;
+    margin: 200px;
+    padding: 100px;
+    box-shadow: 0px 4px 10px rgb(144, 142, 142);
+}
+.c{
+    border: solid black;
+    margin: 200px;
+    padding: 110px;
+    box-shadow: 0px 4px 10px rgb(144, 142, 142);
+}
+.css{
+    border: solid black;
+    margin: 200px;
+    padding: 100px;
+    box-shadow: 0px 5px 10px rgb(144, 142, 142);
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px 100px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.box {
+    position: relative;
+    width: 240px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+
+
+
+.box .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(63,72,204), #000);
+     /* Remove the box shadow properties below */ 
+     box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 20px rgba(0,0,0,0.1),
+    50px 50px 50px rgba(0,0,0,0.1),
+    inset 3px 3px 2px #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .content .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .content .percent::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 20px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.box .content .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.box .content .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: rgba(255,255,255,0.05);
+    transform: translate(5px, 5px);
+}
+
+.box .content .percent svg circle:nth-child(2) {
+    stroke: #fff;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box .content .percent .dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.box .content .percent .dot::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.box .content .number {
+    position: relative;
+    inset: 0;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.box .content .number h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.box .content .number h2 span {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.timeline-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(63,72,204);
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.timeline-item .date {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(63,72,204);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.timeline-item h3 {
+    color: #333;
+}
+
+.timeline-item p {
+    color: #666;
+}
+
+.timeline-item.left::before {
+    right: 50%;
+    left: auto;
+}
+
+.timeline-item.left .date {
+    right: 50%;
+    left: auto;
+}
+
+.timeline-item.left {
+    text-align: right;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .timeline-container {
+        width: 90%;
+    }
+
+    .timeline-item {
+        padding: 15px;
+    }
+}
+
+

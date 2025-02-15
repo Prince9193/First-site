@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="skyrim.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="pro">Portfolio.</a>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#skill">SKILL</a>
+            <a href="#work">WORKS</a>
+            <a href="#">RESUME</a>
+            <a href="#">CONTACT</a>
+            <a href="#" class="Hireme">HIRE ME</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div>
+            <h1 class="name">Hello, I am Prince Singh</h1>
+            <h2>Student</h2>
+            <div class="image">
+                <a class="image1" href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="image"></a>
+                <a class="image2" href="https://www.linkdin.com" target="_blank"><img src="linkedin.png" alt="image"></a>
+                <a class="image3" href="https://www.github.com" target="_blank"><img src="github.png" alt="image"></a>
+            </div>
+    </section>
+    <section id="skill" class="skill">
+        <h2 class="ski">My Skill</h2>
+        <hr>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <div class="percent" data-text="HTML" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <h2>85<span>%</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <div class="percent" data-text="CSS" style="--num: 57">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <h2>57<span>%</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <div class="percent" data-text="Python" style="--num: 50">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <h2>50<span>%</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <div class="percent" data-text="C" style="--num: 30">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <h2>30<span>%</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work">
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="date">2023-11-01</div>
+                <h3>Event Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="date">2023-11-05</div>
+                <h3>Event Title 2</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">2023-11-10</div>
+                <h3>Event Title 3</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="date">2023-11-05</div>
+                <h3>Event Title 2</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+        </div>
+
+
+        <select name="prince" id="country">
+            
+            <option value="">japan</option>
+            <option value="">usa</option>
+            <option value="">uk</option>
+            <option value="">russia</option>
+        </select>
+    </section>
+    <script>
+         // JavaScript for smooth scrolling to sections
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
